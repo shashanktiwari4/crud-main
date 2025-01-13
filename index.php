@@ -13,7 +13,10 @@
 		$dbname = "empdb";
 
 		// Create database connection
-		$conn = new mysqli($servername, $username, $password, $dbname);
+                $conn = mysqli_init();
+                mysqli_ssl_set($con,NULL,NULL, "/home/shashank", NULL, NULL);
+                mysqli_real_connect($conn, "glmysqlserver02.mysql.database.azure.com", "mbadmin", "Samveda@2024", "empdb", 3306, MYSQLI_CLIENT_SSL);
+		//$conn = new mysqli($servername, $username, $password, $dbname);
 
 		// Check connection
 		if ($conn->connect_error) {
