@@ -23,6 +23,7 @@
 		// Query database for all rows in the table
 		$sql = "SELECT * FROM employees";
 		$result = $conn->query($sql);
+               echo "<script>console.log('this is a $result: " . $result. "' );</script>";
 
 		if ($result->num_rows > 0) {
 			// Display table headers
