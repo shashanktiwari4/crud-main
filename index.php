@@ -10,7 +10,7 @@
 		$servername = "glmysqlserver02.mysql.database.azure.com";
 		$username = "mbadmin";
 		$password = "Samveda@2024";
-		$dbname = "glmysqlserver02";
+		$dbname = "empdb";
 
 		// Create database connection
 		$conn = new mysqli($servername, $username, $password, $dbname);
