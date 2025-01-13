@@ -21,7 +21,7 @@
 		}
 
 		// Query database for all rows in the table
-		$sql = "SELECT * FROM empdb.employees";
+		$sql = "SELECT * FROM employees";
 		$result = $conn->query($sql);
 
 		if ($result->num_rows > 0) {
